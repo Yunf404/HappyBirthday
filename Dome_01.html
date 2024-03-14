@@ -10,12 +10,8 @@
             margin: 0;
             overflow: hidden;
             background: #000;
-            background: url("images/edb6b97db14725361322c5ba07752c1.jpg");
-            background-attachment: fixed;
-            background-size: 100% 100%;
 
         }
-
 
         canvas {
             position: absolute;
@@ -113,6 +109,12 @@
         }</style>
 </head>
 <body>
+<div STYLE="border: RED solid 1PX;width: 100px;height: 30px;float: left;left:700px; position: absolute;
+z-index: 2;
+">
+    <a href="birthday-mobile/index.html"
+       style="text-decoration: none;color: white;">点 击 一 下</a>
+</div>
 
 
 <canvas id="pinkboard" width="1920" height="947"
@@ -519,7 +521,7 @@
         setTimeout(function () {
             onResize();
             render();
-        },);
+        }, 10);
     })(document.getElementById("pinkboard"));
 
 </script>
